@@ -30,7 +30,6 @@
                         <li class="nav-item"><a class="nav-link" href="#services">Coding Skill</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <!-- <li class="nav-item"><a class="nav-link" href="#team">Team</a></li> -->
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -203,7 +202,7 @@
                                 <h4>2024</h4>
                                 <h4 class="subheading">Major declared: <br>Bachelor of Science in Computer Science</h4>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">After spending some time exploring the world of coding, I realized that I can actually code and feel excited whenever I do so. I’ve grown to love discussing coding and related topics with others. Initially, I was hesitant to declare a major in this field, fearing I might not be good enough. However, the more I learn, the more everything makes sense, and I’ve also gained valuable insights from others. I’m especially grateful to N.D. Hieu, whose love for coding inspired me to discover its beauty and who believed in my potential and ability to achieve what I want. Participating in my second <a href="https://github.com/Kavya-Jhaveri/LU-24-Hackathon">hackathon</a>, our team won first prize.</p>
+                            <div class="timeline-body"><p class="text-muted">After spending some time exploring the world of coding, I realized that I can actually code and feel excited whenever I do so. I’ve grown to love discussing coding and related topics with others. Initially, I was hesitant to declare a major in this field, fearing I might not be good enough. However, the more I learn, the more everything makes sense, and I’ve also gained valuable insights from others. I’m especially grateful to a friend, whose love for coding inspired me to discover its beauty and who believed in my potential and ability to achieve what I want. Participating in my second <a href="https://github.com/Kavya-Jhaveri/LU-24-Hackathon">hackathon</a>, our team won first prize.</p>
                             </p></div>
                         </div>
                     </li>
@@ -321,56 +320,53 @@
             </div>
         </div>
         <!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact Me!</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-                <form action="https://formsubmit.co/ngacongviec101@gmail.com" method="POST">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <!-- Name input-->
-                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <br>
-                            <div class="form-group">
-                                <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <br>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Send Message</button></div>
-                </form>
+        <section class="contact-section" id="contact">
+            <div class="contact-intro">
+              <h2 class="contact-title">Get in Touch</h2>
+              <p class="contact-description">
+                Fill out the form below and I'll get back to you as soon as possible.
+              </p>
             </div>
-        </section>
+          
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          
+              <input type="hidden" name="access_key" value="a6be12c6-9297-4bbf-a24e-8565f3605092" />
+              <input type="hidden" name="subject" value="New Contact Form Submission from Website" />
+              <input type="hidden" name="from_name" value="My Website" />
+    
+          
+              <div class="form-group-container">
+                <div class="form-group">
+                  <label for="name" class="form-label">Name</label>
+                  <input id="name" name="name" class="form-input" placeholder="Your name" type="text" required/>
+                </div>
+                <div class="form-group">
+                  <label for="email" class="form-label">Email</label>
+                  <input id="email" name="email" class="form-input" placeholder="Your email" type="email" required/>
+                </div>
+                <div class="form-group">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input id="phone" name="phone" class="form-input" placeholder="+1 (234) 56789" type="text"/>
+                </div>
+                <div class="form-group">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-textarea" id="message" name="message" placeholder="Your message" required></textarea>
+                </div>
+              </div>
+              <button class="form-submit" type="submit">Send Message</button>
+            </form>
+          
+          </section>
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-4 text-lg-start">Copyright &copy; Nga Vu 2024 </div>
                     <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                    <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                        <a class="btn btn-dark btn-social mx-2" href="mailto:ngacongviec101@gmail.com" aria-label="Gmail">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/noravu/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
